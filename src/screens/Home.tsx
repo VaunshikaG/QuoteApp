@@ -1,10 +1,10 @@
-import { FlatList, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { FlatList, SafeAreaView, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
-import { AppTheme } from '../../../redux_01/colors'
 import ListQuote from './ListQuote'
 import { useDispatch } from 'react-redux'
 import { AppDispatch } from '../features/store'
 import { fetchQuote, clearAll } from '../features/quoteSlice'
+import { AppTheme } from '../colors'
 
 const Home = () => {
 
@@ -29,7 +29,8 @@ const Home = () => {
   };
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
+      <Text style={styles.header}>Quotes App</Text>
 
       {/* buttons */}
       <View style={styles.btnContainer}>
@@ -50,7 +51,7 @@ const Home = () => {
       </View>
 
       <ListQuote />
-    </View>
+    </SafeAreaView>
   )
 }
 
@@ -60,6 +61,12 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     alignItems: 'center',
     backgroundColor: AppTheme.white,
+  },
+  header: {
+    fontSize: 25,
+    fontWeight: '600',
+    color: AppTheme.blue,
+    margin: 15,
   },
   btnContainer: {
     flexDirection: 'row',

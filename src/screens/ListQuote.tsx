@@ -1,10 +1,10 @@
 import { FlatList, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React, { useEffect } from 'react'
-import { AppTheme } from '../../../redux_01/colors'
 import { useDispatch, useSelector } from 'react-redux'
 import { AppDispatch, RootState } from '../features/store'
 import Icon from '@react-native-vector-icons/fontawesome6';
 import { deleteQuote } from '../features/quoteSlice'
+import { AppTheme } from '../colors';
 
 const ListQuote = () => {
   const dispatch: AppDispatch = useDispatch();
@@ -15,6 +15,7 @@ const ListQuote = () => {
       <Text style={styles.headerText}>List of Quotes</Text>
 
       <FlatList
+        scrollEnabled={true}
         data={quotesList}
         renderItem={({ item }) => (
           <View style={styles.listContainer}>

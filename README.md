@@ -1,98 +1,162 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# QuoteApp
 
-# Getting Started
+A React Native application to fetch and display random quotes using Redux Toolkit and Async Thunks.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+---
 
-## Step 1: Start Metro
+## App Preview
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+![QuoteApp Lists]![](./img1.png)
+*Screen showing list of quotes and add/clear buttons.*
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+![QuoteApp Empty Lists]![](./img2.png)
+*Screen showing no quotes found.*
 
-```sh
-# Using npm
+---
+
+## Features
+
+- Fetch random quotes from an API
+- Display list of quotes
+- Add new random quotes
+- Clear all quotes from the list
+- Delete quote from the list
+- State management using Redux Toolkit and `createAsyncThunk`
+- Error handling and loading states
+
+---
+
+## Tech Stack
+
+- **React Native** (TypeScript)
+- **Redux Toolkit** for state management
+- **React Navigation** for screen navigation
+- **CocoaPods** for iOS dependencies
+- **Android Studio**, **Xcode** for native builds
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14+ recommended)
+- React Native CLI
+- Android Studio with Android SDK
+- Xcode (for iOS only)
+- CocoaPods (for iOS dependencies)
+
+### Installation
+
+1. Clone the repository
+
+```
+git clone https://github.com/VaunshikaG/QuoteApp.git
+cd QuoteApp
+```
+
+2. Install dependencies
+
+```
+npm install
+# or
+yarn install
+```
+
+3. Install iOS dependencies
+
+```
+cd ios
+bundle install
+bundle exec pod install
+cd ..
+```
+
+> If you don't have bundler installed, install it with:
+> ```
+> gem install bundler
+> ```
+
+4. Start Metro bundler
+
+```
 npm start
-
-# OR using Yarn
+# or
 yarn start
 ```
 
-## Step 2: Build and run your app
+5. Run the app
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+- For Android emulator:
 
-### Android
-
-```sh
-# Using npm
+```
 npm run android
-
-# OR using Yarn
+# or
 yarn android
 ```
 
-### iOS
+- For iOS simulator:
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
 ```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
 npm run ios
-
-# OR using Yarn
+# or
 yarn ios
 ```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+---
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+## Usage
 
-## Step 3: Modify your app
+- The app starts with a Splash screen while loading user auth state.
+- Navigate between Signup, Login, Home, Profile, Details, and AddToCart screens.
+- On the Home screen, use buttons to fetch and add new quotes or clear the quote list.
+- Quotes are stored and managed in Redux state.
 
-Now that you have successfully run the app, let's make changes!
+---
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+## Folder Structure
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+```
+/src
+  /features          # Redux slices and store
+  /screens           # Screen components
+  /App.tsx           # Entry point
+```
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+---
 
-## Congratulations! :tada:
+## Troubleshooting
 
-You've successfully run and modified your React Native App. :partying_face:
+- If you encounter CocoaPods errors, run `pod repo update` and `pod install` inside `ios/`.
+- Clean build folders if needed:
 
-### Now what?
+```
+cd ios && xcodebuild clean && cd ..
+cd android && ./gradlew clean && cd ..
+```
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+- For Android build issues, ensure your emulator/device and SDK are properly configured.
 
-# Troubleshooting
+---
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+## Contributing
 
-# Learn More
+Contributions are welcome! Please open an issue or submit a pull request.
 
-To learn more about React Native, take a look at the following resources:
+---
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
-# QuoteApp
+## License
+
+MIT License
+
+---
+
+## Contact
+
+For questions or support, contact the maintainer.
+
+```
+
+If you want, I can also prepare detailed setup and troubleshooting instructions or add sections about the API or authentication flow. Just let me know!
+
+[1] https://github.com/VaunshikaG/QuoteApp
