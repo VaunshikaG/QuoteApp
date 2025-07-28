@@ -8,7 +8,7 @@ A React Native application to fetch and display random quotes using Redux Toolki
 
 | QuoteApp Lists                                | QuoteApp Empty Lists                                  |
 |-----------------------------------------------|-------------------------------------------------------|
-| <img src="./img1.png" width="100" height="300" /> | <img src="./img2.png" width="100" height="300" />      |
+| <img src="./img1.png" width="150" height="400" /> | <img src="./img2.png" width="150" height="400" />      |
 
 
 ---
