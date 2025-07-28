@@ -6,7 +6,7 @@ A React Native application to fetch and display random quotes using Redux Toolki
 
 ## App Preview
 
-| <img src="./img1.png" width="150" height="400" /> | <img src="./img2.png" width="150" height="400" />      |
+<img src="./img1.png" width="150" height="400" />       <img src="./img2.png" width="150" height="400" />      
 
 ---
 
