@@ -6,11 +6,10 @@ A React Native application to fetch and display random quotes using Redux Toolki
 
 ## App Preview
 
-![QuoteApp Lists]![](./img1.png)
-*Screen showing list of quotes and add/clear buttons.*
+| QuoteApp Lists                                | QuoteApp Empty Lists                                  |
+|-----------------------------------------------|-------------------------------------------------------|
+| <img src="./img1.png" width="200" height="300" /> | <img src="./img2.png" width="200" height="300" />      |
 
-![QuoteApp Empty Lists]![](./img2.png)
-*Screen showing no quotes found.*
 
 ---
 
