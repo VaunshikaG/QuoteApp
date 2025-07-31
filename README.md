@@ -140,19 +140,3 @@ cd android && ./gradlew clean && cd ..
 Contributions are welcome! Please open an issue or submit a pull request.
 
 ---
-
-## License
-
-MIT License
-
----
-
-## Contact
-
-For questions or support, contact the maintainer.
-
-```
-
-If you want, I can also prepare detailed setup and troubleshooting instructions or add sections about the API or authentication flow. Just let me know!
-
-[1] https://github.com/VaunshikaG/QuoteApp
